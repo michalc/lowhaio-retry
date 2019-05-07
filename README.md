@@ -3,6 +3,13 @@
 Wrapper that retries failed lowhaio HTTP requests. Allows retries of exceptions from failed HTTP requests.
 
 
+## Installation
+
+```bash
+pip install lowhaio_retry
+```
+
+
 ## Usage
 
 The `request` function returned from `lowhaio.Pool` must be wrapped with `lowhaio_retry.retry`, as in the below example. This will retry the request, waiting the specified interval between retries. If the request still fails, the final exception will be bubbled up to client code.
