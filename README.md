@@ -1,6 +1,6 @@
 # lowhaio-retry
 
-Wrapper that retries failed lowhaio HTTP requests. Allows retries of exceptions from failed HTTP requests.
+Wrapper that retries failed [lowhaio](https://github.com/michalc/lowhaio) HTTP requests. Allows retries of exceptions from failed HTTP requests.
 
 
 ## Installation
