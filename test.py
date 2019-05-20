@@ -43,7 +43,7 @@ class TestIntegration(unittest.TestCase):
         runner = web.AppRunner(app)
 
         request, close = Pool()
-        self.add_async_cleanup(close)
+        self.addCleanup(close)
 
         retriable_request = retry(request,
                                   exception_intervals=(
@@ -71,7 +71,7 @@ class TestIntegration(unittest.TestCase):
     async def test_http_retry_fail_eventually_(self):
 
         request, close = Pool()
-        self.add_async_cleanup(close)
+        self.addCleanup(close)
 
         retriable_request = retry(request,
                                   exception_intervals=(
@@ -85,7 +85,7 @@ class TestIntegration(unittest.TestCase):
     async def test_http_retry_fail_immediately_a(self):
 
         request, close = Pool()
-        self.add_async_cleanup(close)
+        self.addCleanup(close)
 
         retriable_request = retry(request,
                                   exception_intervals=(
@@ -99,7 +99,7 @@ class TestIntegration(unittest.TestCase):
     async def test_http_retry_fail_immediately_b(self):
 
         request, close = Pool()
-        self.add_async_cleanup(close)
+        self.addCleanup(close)
 
         retriable_request = retry(request,
                                   exception_intervals=(),
