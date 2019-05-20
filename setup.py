@@ -19,12 +19,9 @@ setuptools.setup(
         'lowhaio_retry',
     ],
     python_requires='>=3.6.3',
-    install_requires=[
-        'lowhaio',
-    ],
     test_suite='test',
     tests_require=[
-        'lowhaio==0.0.39',
+        'lowhaio~=0.0.39',
         'aiohttp~=3.5.4',
     ],
     classifiers=[
