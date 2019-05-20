@@ -8,7 +8,7 @@ def long_description():
 
 setuptools.setup(
     name='lowhaio_retry',
-    version='0.0.4',
+    version='0.0.5',
     author='Michal Charemza',
     author_email='michal@charemza.name',
     description='Wrapper that retries failed lowhaio HTTP requests',
